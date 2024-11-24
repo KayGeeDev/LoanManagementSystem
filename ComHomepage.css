@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #6a0dad;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #6a0dad, #2b2b52);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav {
+    margin-top: 10px;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 40px 20px;
+  }
+  
+  .section.company {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .section.core-values {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .section.history {
+    background-color: #222222;
+    padding-top: 20px;
+  }
+
+  .section.signup {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .timeline-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .timeline-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Shared Content */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    background-color: #550a8a;
+
+    /* Add smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Button hover animation */
+  .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Timeline toggle effect */
+  .timeline-item p {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .timeline-item h3 {
+    cursor: pointer;
+    color: #6a0dad;
+  }
+  
+  .timeline-item h3:hover {
+    text-decoration: underline;
+  }
+  
+  }
+  
