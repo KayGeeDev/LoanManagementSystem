@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management System Profile Page</title>
+    <link rel="stylesheet" href="Loan Management System Css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Profile</h1> <!-- Main heading for the user profile page -->
+        </header>
+        <form>
+            <div class="section">
+                <h2>Profile Information</h2> <!-- Subheading for Profile Information section -->
+                <div class="scrollable">
+                    <!-- Input fields for user Profile information -->
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                    
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob"> <!-- Date input for date of birth -->
+                </div>
+            </div>
+
+            <!--
+            <div class="section"> -->
+                <!-- <h2>Loan Summary</h2> -->
+                
+                <!-- Input fields for loan summary information -->
+                <!--<label for="status">Status</label>
+                <input type="text" id="status" placeholder="Active, Pending, Completed">
+
+                <label for="balance">Outstanding balance</label>
+                <input type="text" id="balance" placeholder="Enter your balance">
+
+                <label for="due-date">Next Payment Due</label>
+                <input type="date" id="due-date"> 
+            </div> -->
+            
+
+            <div class="section actions">
+                <h2>Actions</h2> <!-- Subheading for Actions section -->
+                
+                <!-- Buttons for user actions -->
+                <button type="button" onclick="alert('Profile Updated')">Update Profile</button>
+                <button type="button" onclick="alert('Password Changed')">Change Password</button>
+            </div>
+        </form>
+        
+        <div class="section support">
+            <h2>Support</h2> <!-- Subheading for Support section -->
+            <!-- Link to contact customer support via email -->
+            <a href="mailto:support.webdev.com">Contact Customer Support</a>
+        </div>
+    </div>
+</body>
+</html>
