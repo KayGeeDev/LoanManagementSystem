@@ -49,15 +49,55 @@
             </div> -->
             
 
-            <div class="section actions">
-                <h2>Actions</h2> <!-- Subheading for Actions section -->
-                
-                <!-- Buttons for user actions -->
-                <button type="button" onclick="alert('Profile Updated')">Update Profile</button>
-                <button type="button" onclick="alert('Password Changed')">Change Password</button>
-            </div>
-        </form>
+             <div class="section actions">
+                <h2>Actions</h2> 
+            <button class="btn-open-popup" onclick="toggleProfilePopup()">Update Profile</button>
+            <button class="btn-open-popup" onclick="togglePasswordPopup()">Change Password</button>
+        </div>
         
+        <div id="profilePopup" class="overlay-container">
+            <div class="popup-box">
+                <h2>Update Profile</h2>
+                <form class="form-container">
+                    <label class="form-label" for="username">Username:</label>
+                    <input class="form-input" type="text" id="username" name="username" required>
+        
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
+        
+                    <button class="btn-submit" type="submit">Update</button>
+                    <button class="btn-close-popup" onclick="toggleProfilePopup()">Close</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="passwordPopup" class="overlay-container">
+            <div class="popup-box">
+                <h2>Change Password</h2>
+                <form class="form-container">
+                    <label class="form-label" for="current-password">Current Password:</label>
+                    <input class="form-input" type="password" id="current-password" name="current-password" required>
+        
+                    <label class="form-label" for="new-password">New Password:</label>
+                    <input class="form-input" type="password" id="new-password" name="new-password" required>
+        
+                    <button class="btn-submit" type="submit">Change</button>
+                    <button class="btn-close-popup" onclick="togglePasswordPopup()">Close</button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function toggleProfilePopup() {
+                const profilePopup = document.getElementById('profilePopup');
+                profilePopup.classList.toggle('show');
+            }
+        
+            function togglePasswordPopup() {
+                const passwordPopup = document.getElementById('passwordPopup');
+                passwordPopup.classList.toggle('show');
+            }
+        </script>
         <div class="section support">
             <h2>Support</h2> <!-- Subheading for Support section -->
             <!-- Link to contact customer support via email -->
