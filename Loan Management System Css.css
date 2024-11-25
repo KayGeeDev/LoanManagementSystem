@@ -115,7 +115,7 @@ a:hover {
 }
 
 .popup-box {
-    background: #fff;
+    background: #000000;
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -131,7 +131,7 @@ a:hover {
 .form-label {
     margin-bottom: 10px;
     font-size: 16px;
-    color: #444;
+    color: #ffffff;
     text-align: left;
 }
 
