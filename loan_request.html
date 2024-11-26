@@ -1,0 +1,141 @@
+<!--  User Dashboard -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Status</title>
+  <link rel="stylesheet" href="NDash.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      height: 100vh;
+      background-color:#1a1a2e;
+      color: #ddd;
+      margin: 0;
+    }
+    .container {
+      background: #333;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      max-width: 350px;
+      width: 90%;
+      height: 30%;
+    }
+    h1 {
+      color: purple;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    label {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #555;
+      border-radius: 4px;
+      background-color: #222;
+      color: #ddd;
+    }
+    input[type="text"]::placeholder {
+      color: #666;
+    }
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: purple;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a387c9;
+    }
+    .status-message {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #ddd;
+      text-align: center;
+    }
+    .dashboard{
+        width: 100%;
+    }
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h1 class="logo">FlexLoan</h1>
+      <nav class="menu">
+        <ul>
+          <a href="NDash.html"><li>Dashboard</li></a>
+          <a href="loan requirements.html"><li>Apply for loan</li></a>
+          <a href="loan request.html"><li>Interest rate</li></a>
+          <a href="settings.html"><li>Settings</li></a>
+    
+        </ul>
+      </nav>
+      
+    </aside>
+    <main class="content">
+        <div class="container">
+            <h1>Check Your Loan Tier</h1>
+            <form id="Loan Request Form">
+              <label for="loanAmount">Enter Desired Loan Amount</label>
+              <input type="text" id="loanAmount" name="loanAmount" placeholder="e.g., 50000" required>
+              <button type="button" onclick="checkLoanTier()">Check Loan Tier</button>
+            </form>
+            <div class="status-message" id="loanTierMessage"></div>
+          </div>
+        
+          <script>
+            function checkLoanTier() {
+              const loanAmount = parseFloat(document.getElementById("loanAmount").value);
+            
+              const messageDiv= document.getElementById("loanTierMessage");
+              messageDiv.innerText="";
+              
+              if (isNaN(loanAmount) || loanAmount <= 0) {
+               messageDiv.innerText= "please enter a valid loan amount.";
+                return;
+              }
+        
+            
+              let tier, interestRate;
+              if (loanAmount >= 5000 && loanAmount <= 50000) {
+                tier = "Tier 1";
+                interestRate = 5;
+              } else if (loanAmount >= 51000 && loanAmount <= 200000) {
+                tier = "Tier 2";
+                interestRate = 10;
+              } else if (loanAmount > 200001 && loanAmount <= 1000000) {
+                tier = "Tier 3";
+                interestRate = 20;
+              } else {
+                tier = "No eligible tier";
+                interestRate = "N/A";
+              }
+        
+            
+              messageDiv.innerText=`Eligible loan Tier:${tier}, Interest rate: ${interestRate}%`;
+            }
+          </script>
+    </main>
+  </div>
+</body>
+</html>

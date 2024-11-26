@@ -37,6 +37,10 @@ body, html {
     list-style: none;
     padding: 0;
   }
+   a {
+    text-decoration: none;
+    list-style: none;
+  }
   
   .menu li {
     padding: 20px;

@@ -1,7 +1,7 @@
 /* General body styling */
 body {
-    background-color: #000000; 
-    color: #E6E6E6; 
+    background-color: #1a1a2e; 
+    color: purple; 
     font-family: Arial, sans-serif; 
     margin: 0; 
     padding: 20px; 
@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header h1 {
-    color: #E6E6E6; 
+    color: purple; 
     margin: 0;
     margin-bottom: 30px; 
 }
@@ -24,10 +24,10 @@ header h1 {
 /* Section styling */
 .section {
     margin-bottom: 30px; 
-    border: 1px solid #4B2C61; 
+    border: 1px solid #1a1a2e; 
     padding: 20px; 
     border-radius: 10px; 
-    background-color: #3A1A5E; 
+    background-color: #1a1a2e; 
 }
 
 /* Input field styling */
