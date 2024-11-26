@@ -1,3 +1,4 @@
+<!-- Signup Page -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +17,7 @@
     </div>
     <div class="right-panel">
       <h2>Create Account</h2>
-
-      <form id="signup-form" action="" method="post">
+      <form action="https://loanmanagementbackends.onrender.com/api/register/" method="post">
         <div class="input-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="First Name" required>
@@ -32,11 +32,11 @@
         </div>
         <div class="input-group">
           <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="password2" name="password2" placeholder="Re-enter your password" required>
+          <input type="password" id="confirmPassword" name="password2" placeholder="Re-enter your password" required>
         </div>
         <button type="submit" class="btn">Create Account</button>
+        <button type="button" class="btn google-btn">Sign up with Google</button>
       </form>
-
 
     </div>
   </div>

@@ -6,9 +6,36 @@ body {
     color: #ffffff;
     line-height: 1.6;
   }
-  
+  /* style for the header */
+  .container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+  .nav-links {
+  list-style: none;
+  display: flex;
+}
+  .nav-links li {
+  margin-left: 1rem;
+}
+  .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
   a {
-    color: #6a0dad;
+    color: linear-gradient(135deg, #6a0dad, #2b2b52);
     text-decoration: none;
   }
   
@@ -35,7 +62,7 @@ body {
   
   /* Header */
   .header {
-    background: linear-gradient(135deg, #6a0dad, #2b2b52);
+    background: purple;
     padding: 20px;
     text-align: center;
   }
@@ -123,7 +150,7 @@ body {
   /* Buttons */
   .btn {
     display: inline-block;
-    background-color: #6a0dad;
+    background-color: purple;
     color: white;
     padding: 10px 20px;
     margin-top: 10px;

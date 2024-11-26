@@ -3,6 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const ctx = document.getElementById("transactionChart").getContext("2d");
+    const apiUrl = "https://loanmanagementbackends.onrender.com/api/dashboard/%3Cint:user_id%3E/%0A"
   
     // Dummy Data for the Chart
     new Chart(ctx, {
