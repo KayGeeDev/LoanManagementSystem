@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    background-color: #000000; 
+    color: #E6E6E6; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+/* Container styling */
+.container {
+    padding: 40px; 
+    background-color: #000000; 
+    border-radius: 10px; 
+}
+
+/* Header styling */
+header h1 {
+    color: #E6E6E6; 
+    margin: 0;
+    margin-bottom: 30px; 
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 30px; 
+    border: 1px solid #4B2C61; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #3A1A5E; 
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    background-color: #4B2C61; 
+    color: #E6E6E6; 
+    border: 1px solid #4B2C61; 
+    padding: 12px; 
+    border-radius: 5px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+}
+
+/* Button styling */
+button {
+    background-color: #5E3A8E; 
+    color: #FFFFFF; 
+    border: none; 
+    padding: 12px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-right: 10px; 
+}
+
+button:hover {
+    background-color: #7A5EAA; 
+}
+
+/* Link styling */
+a {
+    color: #E6E6E6; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Scrollable section styling */
+.scrollable {
+    max-height: 250px;
+    overflow-y: auto; 
+    border: 1px solid #4B2C61; 
+    padding: 15px; 
+    background-color: #3A1A5E; 
+    border-radius: 5px; 
+}
+
+/* Custom scrollbar styling */
+.scrollable::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #4B2C61; 
+    border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #2A0A3D; 
+}
